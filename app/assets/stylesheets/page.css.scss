@@ -1,0 +1,81 @@
+body{
+	margin: 0;
+	background-color: #eee;
+}
+
+div#home-container-1{
+	background-color: #141519;
+	margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+span#name{
+	color: #52576d;
+  font: 2rem 'Merriweather', serif;
+  padding-right: 4px;
+}
+
+div#text-container{
+	margin: 8vmax;
+}
+
+span.automatic-typing{
+  font: 2rem 'Merriweather', serif;
+	color: #eee;
+
+	&::after{
+	  font-weight: 300;
+		font-size: 2.3rem;
+		content: "|";
+	}
+}
+
+span{
+	display: inline-block;
+}
+
+div#social-media{
+	position: absolute;
+	right: 10vmax;
+	bottom: 7vmax;
+}
+
+a.link img{
+	-webkit-backface-visibility: hidden;
+	opacity: 0.8;
+	margin: 5px;
+	-webkit-transition: 200ms linear; 
+  -moz-transition: 200ms linear;
+  -o-transition: 200ms linear;
+  transition: 200ms linear;
+
+  &:hover{
+	  opacity: 1;
+		-webkit-transform: translateZ(10px)  scale(1.1, 1.1);
+		-moz-transform: translateZ(10px)  scale(1.1, 1.1);
+		-o-transform: translateZ(10px)  scale(1.1, 1.1);
+		transform: translateZ(10px)  scale(1.1, 1.1);
+  }
+}
+
+div#motto{
+	margin-left: 10vmax;
+	position: absolute;
+	bottom: 7vmax;	
+  font: 0.7rem 'Raleway', serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #eee;
+
+  a{
+  	color: #eee;
+  	text-decoration: none;
+  	letter-spacing: 1px;
+  }
+}
+
+span#merit{
+	color: #52576d; 
+	letter-spacing: 1px;
+}

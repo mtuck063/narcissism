@@ -1,0 +1,20 @@
+default: &default
+    host: localhost
+    adapter: postgresql
+    database: mywebsite
+    port: 5432
+
+development:
+  <<: *default
+  username: postgres
+  password: postgres
+
+test:
+  <<: *default
+  username: postgres
+  password: postgres
+
+production:
+  <<: *default
+  username: postgres
+  password: postgres
