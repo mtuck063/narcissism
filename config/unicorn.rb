@@ -6,7 +6,7 @@ stderr_path "/root/narcissism/log/unicorn.log"
 
 stdout_path "/root/narcissism/log/unicorn.log"
 
-listen "/tmp/unicorn.narcissism.sock"
+listen "/root/narcissism/tmp/unicorn.narcissism.sock"
 
 worker_processes 2
 
