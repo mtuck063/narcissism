@@ -1,4 +1,3 @@
-APP_PATH = "var/www/narcissism"
 # Sample verbose configuration file for Unicorn (not Rack)
 #
 # This configuration file documents many features of Unicorn
@@ -26,7 +25,8 @@ working_directory "var/www/narcissism" # available in 0.94.0+
 
 # listen on both a Unix domain socket and a TCP port,
 # we use a shorter backlog for quicker failover when busy
-listen "var/www/narcissism/unicorn.sock", :backlog => 64
+listen "/tmp/unicorn.[narcissism].sock"
+listen "/tmp/unicorn.narcissism.sock", :backlog => 64
 listen 8080, :tcp_nopush => true
 
 # nuke workers after 30 seconds instead of 60 seconds (the default)
