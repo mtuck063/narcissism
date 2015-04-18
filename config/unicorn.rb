@@ -4,7 +4,7 @@ pid "/root/narcissism/pid"
 
 stderr_path "/root/narcissism/log/unicorn.log"
 
-strout_path "/root/narcissism/log/unicorn.log"
+stdout_path "/root/narcissism/log/unicorn.log"
 
 listen "/tmp/unicorn.narcissism.sock"
 
