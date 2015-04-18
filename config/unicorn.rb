@@ -1,6 +1,6 @@
 working_directory "/root/narcissism"
 
-pid "/root/narcissism/pid"
+pid "/root/narcissism/pids/unicorn.pid"
 
 stderr_path "/root/narcissism/log/unicorn.log"
 
