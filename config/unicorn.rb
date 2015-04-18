@@ -1,10 +1,10 @@
-working_directory "/narcissism"
+working_directory "/root/narcissism"
 
-pid "/narcissism/pid"
+pid "/root/narcissism/pid"
 
-stderr_path "/narcissism/log/unicorn.log"
+stderr_path "/root/narcissism/log/unicorn.log"
 
-strout_path "/narcissism/log/unicorn.log"
+strout_path "/root/narcissism/log/unicorn.log"
 
 listen "/tmp/unicorn.narcissism.sock"
 
