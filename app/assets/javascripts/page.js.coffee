@@ -1,16 +1,9 @@
 $(document).ready ->
-	automatic_typing()
 	start()
 	return
 
 window.onload = ->
-	$('.bg-loading').css
-    'height': $(window).height() - 30
-    'width': $(window).width() - 30
-  setTimeout (->
-  	$('.loading, .bg-loading').hide()
-  	return
-  	), 750
+	automatic_typing()
 	return
 
 start = ->
