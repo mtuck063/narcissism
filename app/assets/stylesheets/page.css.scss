@@ -7,6 +7,9 @@ div#home-container-1{
 	background-color: #141519;
 	margin: auto;
   position: absolute;
+  height: calc(100vh - 30px);
+  width: calc(100vw - 30px);
+  /*margin: 30px 30px;*/
   top: 0; left: 0; bottom: 0; right: 0;
 }
 
@@ -20,7 +23,7 @@ div#text-container{
 	margin: 8vmax;
 }
 
-span.automatic-typing{
+span.automatic-typing, .typing{
   font: 2rem 'Merriweather', serif;
 	color: #eee;
 
