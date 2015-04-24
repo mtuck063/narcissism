@@ -85,13 +85,13 @@
 
       for (var i = 0; i <= cArr.length; i++) {
         if (cArr[i] === nextcArr[i]) {
-      counter++;
+          counter++;
         } else { break; }
       }
 
       if (cArr[counter] !== " " && counter !== 0) {
         while (true) { 
-      if (cArr[--counter] === " ") { break; } 
+          if (cArr[--counter] === " ") { break; } 
         }
       }
 

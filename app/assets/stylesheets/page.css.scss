@@ -9,27 +9,24 @@ div#home-container-1{
   position: absolute;
   height: calc(100vh - 30px);
   width: calc(100vw - 30px);
-  /*margin: 30px 30px;*/
   top: 0; left: 0; bottom: 0; right: 0;
-}
-
-span#name{
-	color: #52576d;
-  font: 2rem 'Merriweather', serif;
-  padding-right: 4px;
 }
 
 div#text-container{
 	margin: 8vmax;
 }
 
-span.automatic-typing, .typing{
+span.automatic-typing{
   font: 2rem 'Merriweather', serif;
 	color: #eee;
 
+	&::before{
+		color: #52576d;
+    content: "Menelik Tucker ";
+	}	
+
 	&::after{
 	  font-weight: 300;
-		font-size: 2.3rem;
 		content: "|";
 	}
 }
@@ -42,6 +39,10 @@ div#social-media{
 	position: absolute;
 	right: 10vmax;
 	bottom: 7vmax;
+	-webkit-transition: 300ms linear; 
+  -moz-transition: 300ms linear;
+  -o-transition: 300ms linear;
+  transition: 300ms linear;
 }
 
 a.link img{
@@ -63,7 +64,7 @@ a.link img{
 }
 
 div#motto{
-	margin-left: 10vmax;
+	left: 10vmax;
 	position: absolute;
 	bottom: 7vmax;	
   font: 0.7rem 'Raleway', serif;
@@ -81,4 +82,12 @@ div#motto{
 span#merit{
 	color: #52576d; 
 	letter-spacing: 1px;
+}
+
+@media screen and (max-width: 600px){
+
+	div#social-media{
+		opacity: 0;
+	}
+
 }
