@@ -67,6 +67,7 @@ div#motto{
 	left: 10vmax;
 	position: absolute;
 	bottom: 7vmax;	
+	width: 240px;
   font: 0.7rem 'Raleway', serif;
   font-weight: 300;
   text-transform: uppercase;
@@ -89,5 +90,12 @@ span#merit{
 	div#social-media{
 		opacity: 0;
 	}
+
+	div#motto{
+		left: 0; right: 0;
+		margin: auto;
+	}
+
+
 
 }
