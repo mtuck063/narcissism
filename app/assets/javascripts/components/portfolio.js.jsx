@@ -26,7 +26,7 @@ var Portfolio = React.createClass({
           <div className="row">
             <div className="col s12 m12 l4 small-row">
               <a className="portfolio-item" href="/projects/sesa" onClick={this.onPageChange} >
-                <img src="/assets/sesa_home-d1e4fc21b8e860a3c85b51113397f489.jpg"/>
+                <img src={this.props.sesa}/>
                 <span className="project-type">Social Project</span>
                 <span className="project-name">SESA</span>
               </a> 
@@ -34,7 +34,7 @@ var Portfolio = React.createClass({
 
             <div className="col s12 m12 l8">
               <a className="portfolio-item" href="/projects/compass" onClick={this.onPageChange}>
-                <img src="/assets/compass_home-82a9a67a25634f0545fd804b13edce2e.jpg"/>
+                <img src={this.props.compass}/>
                 <span className="project-type">Contract Work</span>
                 <span className="project-name">Compass</span>
               </a>
@@ -44,7 +44,7 @@ var Portfolio = React.createClass({
           <div className="row">
             <div className="col s12 m12 l12">
               <a className="portfolio-item" href="/projects/makerepo" onClick={this.onPageChange}>
-                <img src="/assets/makerepo_home-4713f22656ab71103e1a05f042cd1e06.jpg"/>
+                <img src={this.props.makerepo}/>
                 <span className="project-type">Contract Work</span>
                 <span className="project-name">MakerRepo</span>
               </a>
@@ -54,7 +54,7 @@ var Portfolio = React.createClass({
           <div className="row">
             <div className="col s12 m12 l8 small-row">
               <a className="portfolio-item" href="/projects/yusso" onClick={this.onPageChange}>
-                <img src="/assets/yusso_home-23a8ffc1b4cc7d7bb79f26c345c797e8.jpg"/>
+                <img src={this.props.yusso}/>
                 <span className="project-type">Personal Project</span>
                 <span className="project-name">Yusso</span>
               </a>

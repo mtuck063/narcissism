@@ -21,25 +21,25 @@ var Makerepo = React.createClass({
         <div className="whitespace"></div>
         
         <div className="full">
-          <img src="/assets/makerepo3-fd0b64f9ef815fd471968e155b9de0c4.png" />
+          <img src={this.props.makerepo1} />
         </div>
 
         <div className="whitespace"></div>
         
         <div className="full">
-          <img src="/assets/makerepo1-6a6768fb53f50b3b5cf4763f769a0cd4.png" />
+          <img src={this.props.makerepo2} />
         </div>
 
         <div className="whitespace"></div>
         
         <div className="full">
-          <img src="/assets/makerepo2-b76f5308ae5da91be90f490db5342b51.png" />
+          <img src={this.props.makerepo3} />
         </div>
 
         <div className="whitespace"></div>
         
         <div className="full full-tablet">
-          <img src="/assets/makerepo5-fad2072a13b116fe9fc6e5d0dd892ab2.png" />
+          <img src={this.props.makerepo4} />
         </div>
 
       </div>

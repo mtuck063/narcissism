@@ -22,31 +22,31 @@ var Compass = React.createClass({
           <div className="whitespace"></div>
           
           <div className="full">
-            <img src="/assets/compass1-da9e65573605efc7fef949160fb2aaa0.png" />
+            <img src={this.props.compass1} />
           </div>
 
           <div className="whitespace"></div>
 
           <div className="full">
-            <img src="/assets/compass2-8631b1b38a8930f82ae6639ac2495d03.png" />
+            <img src={this.props.compass2} />
           </div>
 
           <div className="whitespace"></div>
 
           <div className="full">
-            <img src="/assets/compass.png" />
+            <img src={this.props.comass3} />
           </div>
 
           <div className="whitespace"></div>
 
           <div className="full">
-            <img src="/assets/compass4-ad304fa12ad36a1cdd1e5d7d9838072f.png" />
+            <img src={this.props.compass4} />
           </div>
 
           <div className="whitespace"></div>
 
           <div className="full">
-            <img src="/assets/compass5-e5cb3e1a11cc4e35a1f1c7c72e9a8627.png" />
+            <img src={this.props.compass5} />
           </div> 
 
       </div>

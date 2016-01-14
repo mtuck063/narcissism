@@ -20,25 +20,25 @@ var Yusso = React.createClass({
         <div className="whitespace"></div>
         
         <div className="full">
-          <img src="/assets/yusso1.png" />
+          <img src={this.props.yusso1} />
         </div>
 
         <div className="whitespace"></div>
         
         <div className="full">
-          <img src="/assets/yusso2.png" />
+          <img src={this.props.yusso2} />
         </div>
 
         <div className="whitespace"></div>
         
         <div className="full">
-          <img src="/assets/yusso3.png" />
+          <img src={this.props.yusso3} />
         </div>
 
         <div className="whitespace"></div>
         
         <div className="full">
-          <img src="/assets/yusso4.png" />
+          <img src={this.props.yusso4} />
         </div>
 
       </div>

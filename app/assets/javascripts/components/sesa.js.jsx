@@ -20,15 +20,15 @@ var Sesa = React.createClass({
         <div className="whitespace"></div>
 
         <div className="full">
-          <img src="/assets/sesa1-6a443568ad20d9b4e010845532d968dc.png" />
+          <img src={this.props.sesa1} />
         </div>
 
         <div className="whitespace"></div>
 
         <div className="row triple-phones no-margin">
-          <div className="col s12 m4"><img src="/assets/sesa2-79249af116c83488bcbfb7425f3d8d42.png" /></div>
-          <div className="col s12 m4"><img src="/assets/sesa3-88a22c867e4845017808e0988a79cb8c.png"/></div>
-          <div className="col s12 m4"><img src="/assets/sesa4-d5dff716c9437775bd33b1a8d39733fc.png"/></div>
+          <div className="col s12 m4"><img src={this.props.sesa2} /></div>
+          <div className="col s12 m4"><img src={this.props.sesa3}/></div>
+          <div className="col s12 m4"><img src={this.props.sesa4}/></div>
         </div>
 
         <div className="whitespace"></div>
@@ -44,13 +44,13 @@ var Sesa = React.createClass({
         <div className="whitespace"></div>
 
         <div className="full">
-          <img src="/assets/sesa5-79be4b9786563b55d0e6d34cf463f81e.png"/>
+          <img src={this.props.sesa5}/>
         </div>
 
         <div className="whitespace"></div>
 
         <div className="full">
-          <img src="/assets/sesa6-ad57c7a0eaad25916b90569f0637cfef.png"/>
+          <img src={this.props.sesa6}/>
         </div>
 
       </div>
