@@ -1,0 +1,83 @@
+.project{
+  margin-top: 150px;
+
+  .description{
+    font-size: 2rem;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    text-align: center;
+    color: #ddd;
+    padding: 0 20px;
+  }
+
+  .summary{
+    font-size: 1.1rem;
+    font-size: 300;
+    max-width: 700px;
+    margin: 0 auto 100px;
+    text-align: center;
+    padding: 0 20px;
+    line-height: 1.8;
+  }
+
+  .full, .full-tablet{
+    padding: 70px 0;
+    background-color: #ddd;
+
+    img{
+      margin: 0 auto;
+      display: block;
+      width: 80%;
+    }
+  }
+
+  .full-tablet img{
+    width: auto;
+    max-height: 700px;
+  }
+
+  .triple-phones{
+    background-color: #ddd;
+
+    .col{
+      padding: 70px 0;
+      max-width: 100%;
+    }
+
+    img{
+      width: 100%;
+      padding: 0 20px;
+      max-width: 300px;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+
+  .filler-text{
+    padding: 70px 0;
+    background-color: #ddd;
+
+    .title{
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      max-width: 700px;
+      margin: 0 auto 40px;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .explanation{
+      font-size: 1.5rem;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: $small-screen){
+  .full img{
+    width: 95% !important;
+  }
+}

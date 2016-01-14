@@ -1,11 +1,13 @@
 source 'https://rubygems.org'
 
-ruby '2.2.1'
+ruby '2.2.2'
 
 require 'rbconfig'
 
-
-gem 'rails', '~> 4.2.0'
+gem 'rails', '~> 4.2.5'
+gem 'font-awesome-rails'
+gem 'materialize-sass'
+gem 'react-rails'
 gem 'pg', '~> 0.18.1'
 gem 'unicorn-worker-killer'
 gem 'sass-rails', '~> 5.0'
@@ -16,7 +18,7 @@ gem 'slim', '~> 2.0.0'
 gem 'uglifier', '~> 2.1.1'
 gem 'coffee-rails', '~> 4.0.1'
 gem 'jquery-rails', '~> 3.0.4'
-gem 'turbolinks', '~> 2.3.0'
+gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'actionview-encoded_mail_to'
 

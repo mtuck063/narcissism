@@ -1,20 +1,362 @@
-<div id="home-container-1">
+<section class="body">
 
-	<div id="text-container">
-		<span class="automatic-typing"></span>
-	</div>
+  <header class="z-depth-3">
+    <%= link_to "Menelik Tucker ", root_path, class: "left root-link" %>
+    <span class="left" style="padding:10px 5px; letter-spacing: 2px; color: #ddd;">Full Stack Engineer</span>
+    <span class="hide-on-small-only">
+      <%= link_to fa_icon("stack-overflow"), "http://stackoverflow.com/users/4535724/menelik-tucker" %> &middot;
+      <%= link_to fa_icon("github"), "https://github.com/mtuck063" %>  &middot;
+      <%= link_to fa_icon("twitter"), "https://twitter.com/MenelikTucker" %>
+    </span>
+  </header>
 
-	<div id="motto">
-		<span id="merit">simple. creative. design.</span><br>
-		<%= mail_to "meneliktucker@gmail.com", "meneliktucker at gmail dot com", encode: "hex" do %>
-		<span>meneliktucker at gmail dot com</span>
-		<% end %>
-	</div>
+<div class="project">
 
-	<div id="social-media">
-		<%= link_to(image_tag("stackoverflow.png", size:"30x30"), "http://stackoverflow.com/users/4535724/menelik-tucker", class: 'link' )%>
-		<%= link_to(image_tag("github.png", size:"30x30"), "https://github.com/mtuck063", class: 'link' )%>
-		<%= link_to(image_tag("twitter.png", size:"30x30"), "https://twitter.com/MenelikTucker", class: 'link' )%>
-	</div>
+    <div class="description">
+      Yusso — My best friend.
+    </div>
+
+    <div class="summary">
+      Yusso is a local rapper in the city of Ottawa. To aid in his career I offered to make his very own website. With the liberty to do whatever I may choose, the development of the site has given me the another opportunity to learn and grow my knowledge of web development and web design.
+    </div>
+
+    <div class="whitespace"></div>
+    
+    <div class="full">
+      <%= image_tag "makerepo3.png" %>
+    </div>
+
+
 </div>
 
+<!--   <div class="description">
+      SESA — Creating a community of software engineers at the University of Ottawa.
+    </div>
+
+    <div class="summary grey-text">
+      The main objective of SESA is to enrich the student life for all software engineers by offering them more
+      than what school can offer alone. As one of the founders of SESA I lead the creation of our first site with many other iteration there after. In collaboration with the other founders we laid out the user experience, creative design and the visual content of the site.
+    </div>
+
+    <div class="whitespace"></div>
+
+    <div class="full">
+      <%= image_tag "sesa1.png" %>
+    </div>
+
+    <div class="whitespace"></div>
+
+    <div class="row triple-phones no-margin">
+      <div class="col s12 m4"><%= image_tag "sesa2.png" %></div>
+      <div class="col s12 m4"><%= image_tag "sesa3.png" %></div>
+      <div class="col s12 m4"><%= image_tag "sesa4.png" %></div>
+    </div>
+
+    <div class="whitespace"></div>
+
+    <div class="filler-text">
+      <div class="title grey-text">Many Iterations</div>
+      <div class="explanation">
+        Built after months of many iterations, SESA's web platform finally was completed using Rails for its backend, Foundation for its frontend and hosted on Heroku for it's free and easy to use services.
+      </div>
+    </div>
+
+    <div class="whitespace"></div>
+
+    <div class="full">
+      <%= image_tag "sesa5.png" %>
+    </div>
+
+    <div class="whitespace"></div>
+
+    <div class="full">
+      <%= image_tag "sesa6.png" %>
+    </div> -->
+<!-- <div class="portfolio">
+
+    <h1>PORTFOLIO</h1>
+
+    <div class="row">
+      <div class="col s12 m12 l4 small-row">
+        <%= link_to "#", class: "portfolio-item" do %>
+          <%= image_tag "sesa_home.jpg" %>
+          <span class="project-type">Social Project</span>
+          <span class="project-name">SESA</span>
+        <% end %>
+      </div>
+      <div class="col s12 m12 l8">
+        <%= link_to "#", class: "portfolio-item" do %>
+          <%= image_tag "compass_home.jpg" %>
+          <span class="project-type">Contract Work</span>
+          <span class="project-name">Compass</span>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12 m12 l12">
+        <%= link_to "#", class: "portfolio-item" do %>
+          <%= image_tag "makerepo_home.jpg" %>
+          <span class="project-type">Contract Work</span>
+          <span class="project-name">MakerRepo</span>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="row">
+       <div class="col s12 m12 l8 small-row">
+        <%= link_to "#", class: "portfolio-item" do %>
+          <%= image_tag "yusso_home.jpg" %>
+          <span class="project-type">Personal Project</span>
+          <span class="project-name">Yusso</span>
+        <% end %>
+      </div>
+
+       <div class="col s12 m12 l4">
+
+        <%= form_tag "/contact", action: :post, remote: :true do %>
+
+          <div class="row">
+            <div class="col input-field  s12">
+              <%= fa_icon("envelope-o", class: "material-icons prefix") %>
+              <%= text_area_tag :message, nil, class: "materialize-textarea", placeholder: "Hey Tucker! Why the heck are you so cool?" %>
+              <%= label_tag :message, "SEND A MESSAGE" %>
+            </div>
+            <div class="col input-field  s12">
+              <%= button_tag fa_icon("paper-plane-o"), class: "waves-effect waves-light btn" %>
+            </div>
+          </div>
+        <% end %>
+
+       </div>
+
+    </div>
+
+  </div>  -->
+
+<!--   <div class="project">
+
+    <div class="description">
+      Yusso — My best friend.
+    </div>
+
+    <div class="summary">
+      Yusso is a local rapper in the city of Ottawa. To aid in his career I offered to make his very own website. With the liberty to do whatever I may choose, the development of the site has given me the another opportunity to learn and grow my knowledge of web development and web design.
+    </div>
+
+    <div class="whitespace"></div>
+    
+    <div class="full">
+      <%= image_tag "makerepo3.png" %>
+    </div>
+
+
+
+  </div> -->
+
+
+
+
+<!--   <div class="portfolio">
+
+    <h1>PORTFOLIO</h1>
+
+    <div class="row">
+      <div class="col s12 m12 l4 small-row">
+        <%= link_to "#", class: "portfolio-item" do %>
+          <%= image_tag "sesa_home.jpg" %>
+          <span class="project-type">Social Project</span>
+          <span class="project-name">SESA</span>
+        <% end %>
+      </div>
+      <div class="col s12 m12 l8">
+        <%= link_to "#", class: "portfolio-item" do %>
+          <%= image_tag "compass_home.jpg" %>
+          <span class="project-type">Contract Work</span>
+          <span class="project-name">Compass</span>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12 m12 l12">
+        <%= link_to "#", class: "portfolio-item" do %>
+          <%= image_tag "makerepo_home.jpg" %>
+          <span class="project-type">Contract Work</span>
+          <span class="project-name">MakerRepo</span>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="row">
+       <div class="col s12 m12 l8 small-row">
+        <%= link_to "#", class: "portfolio-item" do %>
+          <%= image_tag "yusso_home.jpg" %>
+          <span class="project-type">Personal Project</span>
+          <span class="project-name">Yusso</span>
+        <% end %>
+      </div>
+
+       <div class="col s12 m12 l4">
+
+        <%= form_tag "/contact", action: :post, remote: :true do %>
+
+          <div class="row">
+            <div class="col input-field  s12">
+              <%= fa_icon("envelope-o", class: "material-icons prefix") %>
+              <%= text_area_tag :message, nil, class: "materialize-textarea", placeholder: "Hey Tucker! Why the heck are you so cool?" %>
+              <%= label_tag :message, "SEND A MESSAGE" %>
+            </div>
+            <div class="col input-field  s12">
+              <%= button_tag fa_icon("paper-plane-o"), class: "waves-effect waves-light btn" %>
+            </div>
+          </div>
+        <% end %>
+
+       </div>
+
+    </div>
+
+  </div> -->
+
+<!--     <div class="description">
+      Compass — A platform for teens to showcase a wide range of skills, interest and accomplishments.
+    </div>
+
+    <div class="summary grey-text">
+      Compass is an e-portfolio platform for the teens involved with 
+      <%= link_to "Liberated Learners", "http://liberatedlearners.net/"%>. Empowering teens to set their own goals and be able to track and reflect on their progress, connecting activities both inside and outside of liberated learners with these goals.
+    </div> -->
+
+<!--     <div class="description">
+      MakerRepo — a repository based platform provided primarily for 3-D Modelling.
+    </div>
+
+    <div class="summary">
+      A summer project worked under Hanan Anis for Maker Space at the University of Ottawa. The goal of MakerRepo is to provide a platform where individuals may upload 3-D designs to a repository system that adhered to physical objects. 
+    </div> -->
+
+<!--   <div class="description">
+    Yusso — My best friend.
+  </div>
+
+  <div class="summary">
+    Yusso is a local rapper in the city of Ottawa. To aid in his career I offered to make his very own website. With the liberty to do whatever I may choose, the development of the site has given me the another opportunity to learn and grow my knowledge of web development and web design.
+  </div> -->
+
+<!--     <div class="description">
+      SESA — Creating a community of software engineers at the University of Ottawa.
+    </div>
+
+    <div class="summary grey-text">
+      The main objective of SESA is to enrich the student life for all software engineers by offering them more
+      than what school can offer alone. As one of the founders of SESA I lead the creation of our first site with many other iteration there after. In collaboration with the other founders we laid out the user experience, creative design and the visual content of the site.
+    </div>
+
+    <div class="whitespace"></div>
+
+    <div class="full">
+      <%= image_tag "sesa1.png" %>
+    </div>
+
+    <div class="whitespace"></div>
+
+    <div class="row triple-phones no-margin">
+      <div class="col s12 m4"><%= image_tag "sesa2.png" %></div>
+      <div class="col s12 m4"><%= image_tag "sesa3.png" %></div>
+      <div class="col s12 m4"><%= image_tag "sesa4.png" %></div>
+    </div>
+
+    <div class="whitespace"></div>
+
+    <div class="filler-text">
+      <div class="title grey-text">Many Iterations</div>
+      <div class="explanation">
+        Built after months of many iterations, SESA's web platform finally was completed using Rails for its backend, Foundation for its frontend and hosted on Heroku for it's free and easy to use services.
+      </div>
+    </div>
+
+    <div class="whitespace"></div>
+
+    <div class="full">
+      <%= image_tag "sesa5.png" %>
+    </div>
+
+    <div class="whitespace"></div>
+
+    <div class="full">
+      <%= image_tag "sesa6.png" %>
+    </div> -->
+
+<!--     <div class="description">
+      Compass — A platform for teens to showcase a wide range of skills, interest and accomplishments.
+    </div>
+
+    <div class="summary grey-text">
+      Compass is an e-portfolio platform for the teens involved with 
+      <%= link_to "Liberated Learners", "http://liberatedlearners.net/"%>. Empowering teens to set their own goals and be able to track and reflect on their progress, connecting activities both inside and outside of liberated learners with these goals.
+    </div> 
+
+    <div class="whitespace"></div>
+    
+    <div class="full">
+      <%= image_tag "compass1.png" %>
+    </div>
+
+    <div class="whitespace"></div>
+
+    <div class="full">
+      <%= image_tag "compass2.png" %>
+    </div>
+
+    <div class="whitespace"></div>
+
+    <div class="full">
+      <%= image_tag "compass3.png" %>
+    </div>
+
+    <div class="whitespace"></div>
+
+    <div class="full">
+      <%= image_tag "compass4.png" %>
+    </div>
+
+    <div class="whitespace"></div>
+
+    <div class="full">
+      <%= image_tag "compass5.png" %>
+    </div> -->
+
+<!--     <div class="description">
+      MakerRepo — a repository based platform provided primarily for 3-D Modelling.
+    </div>
+
+    <div class="summary">
+      A summer project worked under Hanan Anis for Maker Space at the University of Ottawa. The goal of MakerRepo is to provide a platform where individuals may upload 3-D designs to a repository system that adhered to physical objects. 
+    </div>
+
+    <div class="whitespace"></div>
+    
+    <div class="full">
+      <%= image_tag "makerepo3.png" %>
+    </div>
+
+    <div class="whitespace"></div>
+    
+    <div class="full">
+      <%= image_tag "makerepo1.png" %>
+    </div>
+
+    <div class="whitespace"></div>
+    
+    <div class="full">
+      <%= image_tag "makerepo2.png" %>
+    </div>
+
+    <div class="whitespace"></div>
+    
+    <div class="full full-tablet">
+      <%= image_tag "makerepo5.png" %>
+    </div> -->
+
+</section>

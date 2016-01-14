@@ -4,15 +4,29 @@
   <%= favicon_link_tag 'mlogo.jpg' %>
   <title>Menelik Tucker</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <%= stylesheet_link_tag "application", media: "all",
-                                           "data-turbolinks-track" => true %>
+    <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
-		<link href='http://fonts.googleapis.com/css?family=Merriweather:400,300' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "vendor", :debug => false %>
   </head>
   <body>
-    <%= yield %>
-    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  </body>
+    <section class="body">
 
+      <header class="z-depth-3">
+        <%= link_to "Menelik Tucker ", root_path, class: "left root-link" %>
+        <span class="left" style="padding:10px 5px; letter-spacing: 2px; color: #ddd;">Full Stack Engineer</span>
+        <span class="hide-on-small-only">
+          <%= link_to fa_icon("stack-overflow"), "http://stackoverflow.com/users/4535724/menelik-tucker" %> &middot;
+          <%= link_to fa_icon("github"), "https://github.com/mtuck063" %>  &middot;
+          <%= link_to fa_icon("twitter"), "https://twitter.com/MenelikTucker" %>
+        </span>
+      </header>
+
+      <%= yield %>
+
+    </section>
+    <div class="automatic-typing"></div>
+  </body>
 </html>
