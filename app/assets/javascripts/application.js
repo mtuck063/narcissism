@@ -18,3 +18,9 @@
 //= require components
 //= require_tree .
 
+$(document).on('click', '.root-link', function(e){
+  e.preventDefault();
+  $(".body").velocity({ opacity: 0, right: '-200px' }, { duration: 250 }, "easeOutCubic");
+  var link = $(this).attr("href");
+  setTimeout(function() { Turbolinks.visit(link) }, 250);
+});

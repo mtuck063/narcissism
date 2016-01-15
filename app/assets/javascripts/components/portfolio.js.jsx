@@ -1,6 +1,6 @@
 var Portfolio = React.createClass({
   componentDidMount: function() {
-    $(".body").velocity({ opacity: 1, right: '0'  }, { duration: 250 }, "linear");
+    $(".body").velocity({ opacity: 1, right: '0'  }, { duration: 500 }, "linear");
   },
   onPageChange: function(e){
     e.preventDefault();

@@ -34,7 +34,12 @@ var Compass = React.createClass({
           <div className="whitespace"></div>
 
           <div className="full">
-            <img src={this.props.comass3} />
+          </div>
+
+          <div className="whitespace"></div>
+
+          <div className="full">
+            <img src={this.props.compass3} />
           </div>
 
           <div className="whitespace"></div>

@@ -33,6 +33,11 @@ var Makerepo = React.createClass({
         <div className="whitespace"></div>
         
         <div className="full">
+        </div>
+        
+        <div className="whitespace"></div>
+        
+        <div className="full">
           <img src={this.props.makerepo3} />
         </div>
 
