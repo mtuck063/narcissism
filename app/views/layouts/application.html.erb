@@ -14,9 +14,9 @@
   <body>
     <section class="body">
 
-      <header class="z-depth-3">
+      <header class="z-depth-1">
         <%= link_to "Menelik Tucker ", root_path, class: "left root-link" %>
-        <span class="left full-stack">Full Stack Engineer</span>
+        <span class="left full-stack automatic-typing"></span>
         <span class="hide-on-small-only">
           <%= link_to fa_icon("stack-overflow"), "http://stackoverflow.com/users/4535724/menelik-tucker" %> &middot;
           <%= link_to fa_icon("github"), "https://github.com/mtuck063" %>  &middot;
@@ -27,6 +27,5 @@
       <%= yield %>
 
     </section>
-    <div class="automatic-typing"></div>
   </body>
 </html>

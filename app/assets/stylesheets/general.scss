@@ -52,26 +52,6 @@ textarea.materialize-textarea{
   transition: all 500ms linear;
 }
 
-.automatic-typing{
-  font: 1.25rem 'Merriweather', serif;
-  color: #141519;
-  height: 100vh;
-  width: 100vw;
-  line-height: 100vh;
-  text-align: center;
-
-
-  &::before{
-    color: #52576d;
-    content: "Menelik Tucker ";
-  } 
-
-  &::after{
-    font-weight: 300;
-    // content: "|";
-  }
-}
-
 @media screen and (max-width: $small-screen){
   .body{
     height: 100vh;

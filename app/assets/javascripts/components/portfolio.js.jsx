@@ -1,12 +1,30 @@
 var Portfolio = React.createClass({
+  getInitialState: function() {
+    return { viewingAboutMe: false };
+  },
   componentDidMount: function() {
     $(".body").velocity({ opacity: 1, right: '0'  }, { duration: 500 }, "linear");
+    $(".imasquare").velocity("fadeIn", { duration: 500 });
   },
   onPageChange: function(e){
     e.preventDefault();
     $(".body").velocity({ opacity: 0, right: '-200px' }, { duration: 250 }, "easeOutCubic");
     var link = $(e.currentTarget).attr("href");
     setTimeout(function() { Turbolinks.visit(link) }, 250);
+  },
+  componentDidUpdate: function(){
+    if(!this.state.viewingAboutMe){
+      $(".imasquare").velocity("fadeIn", { duration: 500 });
+    }else{
+      $(".me").velocity("fadeIn", { duration: 500 });
+    }
+  },
+  openAboutMe: function(e){
+    $(".imasquare").addClass("hide-square");
+    setTimeout(function() { this.setState({ viewingAboutMe: true }) }.bind(this), 1000);
+  },
+  hideAboutMe: function(e){
+    this.setState({ viewingAboutMe: false });
   },
   submitContactForm: function(e){
     $("#message").attr("placeholder", "");
@@ -17,9 +35,31 @@ var Portfolio = React.createClass({
   },
   render: function(){
 
+    var aboutMe;
+
+    if(this.state.viewingAboutMe){
+      aboutMe = <div className="me">
+                  <div className="close-me" onClick={this.hideAboutMe}>&times;</div>
+                  <span>Menelik Tucker is a soon to be graduate (April '16) in Software Engineering at the University 
+                  of Ottawa. He is currently a software developer at BiteSite Inc., working on several web 
+                  applications. In the past year Menelik has done work for the University of Ottawa making a 
+                  repository system for 3D models. Along with work for Liberated Learners, where he made an 
+                  e-portfolio web applications for their students. He is also one of the founders of the Software 
+                  Engineering Student Association, which he is currently VP Finance.</span>
+                </div>;
+    }else{
+      aboutMe = <div className="imasquare" onClick={this.openAboutMe}>
+                  <div className="inner-text">Menelik Tucker</div>
+                </div>;
+    }
+
     return (
 
       <div className="portfolio">
+
+          <div className="about-me">
+            {aboutMe}
+          </div>
 
           <h1>PORTFOLIO</h1>
 

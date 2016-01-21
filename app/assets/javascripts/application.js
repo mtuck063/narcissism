@@ -24,3 +24,17 @@ $(document).on('click', '.root-link', function(e){
   var link = $(this).attr("href");
   setTimeout(function() { Turbolinks.visit(link) }, 250);
 });
+
+$(document).on('page:change', function(){
+
+  $('.automatic-typing').automaticTyping({
+    writeTime   :  60,
+    deleteTime  :  40,
+    pauseTime   :  20000,
+    sentences   : ['FULL STACK ENGINEER',
+                  'FRONTEND ENGINEER', 
+                  'BACKEND ENGINEER'
+                   ]
+  });
+
+});
