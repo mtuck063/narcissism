@@ -26,7 +26,7 @@ var Portfolio = React.createClass({
           <div className="row">
             <div className="col s12 m12 l4 small-row">
               <a className="portfolio-item" href="/projects/sesa" onClick={this.onPageChange} >
-                <img src={this.props.sesa}/>
+                <img className="z-depth-1" src={this.props.sesa}/>
                 <span className="project-type">Social Project</span>
                 <span className="project-name">SESA</span>
               </a> 
@@ -34,7 +34,7 @@ var Portfolio = React.createClass({
 
             <div className="col s12 m12 l8">
               <a className="portfolio-item" href="/projects/compass" onClick={this.onPageChange}>
-                <img src={this.props.compass}/>
+                <img className="z-depth-1" src={this.props.compass}/>
                 <span className="project-type">Contract Work</span>
                 <span className="project-name">Compass</span>
               </a>
@@ -44,7 +44,7 @@ var Portfolio = React.createClass({
           <div className="row">
             <div className="col s12 m12 l12">
               <a className="portfolio-item" href="/projects/makerepo" onClick={this.onPageChange}>
-                <img src={this.props.makerepo}/>
+                <img className="z-depth-1" src={this.props.makerepo}/>
                 <span className="project-type">Contract Work</span>
                 <span className="project-name">MakerRepo</span>
               </a>
@@ -54,7 +54,7 @@ var Portfolio = React.createClass({
           <div className="row">
             <div className="col s12 m12 l8 small-row">
               <a className="portfolio-item" href="/projects/yusso" onClick={this.onPageChange}>
-                <img src={this.props.yusso}/>
+                <img className="z-depth-1" src={this.props.yusso}/>
                 <span className="project-type">Personal Project</span>
                 <span className="project-name">Yusso</span>
               </a>

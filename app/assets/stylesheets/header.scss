@@ -6,7 +6,6 @@ header{
   font-weight: 300;
   position: fixed;
   width: 100vw;
-  // width: calc(100% - 40px);
   padding: 10px 20px;
   z-index: 1000;
   background-color: #141519;
@@ -17,7 +16,7 @@ header{
     letter-spacing: 2px;
     color: #ddd;
   }
-  
+
   a {
     color: #52576d;
 

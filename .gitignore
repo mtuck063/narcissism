@@ -12,7 +12,6 @@
 /db/*.sqlite3-journal
 
 /public/assets
-config.ru
 
 # Ignore all logfiles and tempfiles.
 /log/*
